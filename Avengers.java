@@ -1,7 +1,5 @@
 package com.itheima;
-
 import java.util.ArrayList;
-
 /*在测试类中创建6个对象（对象数据如下），依次将Avengers对象存入集合。
     1,"钢铁侠","男"
     2,"美国队长","男"
@@ -14,41 +12,31 @@ public class Avengers {
     int id;
     String name;
     String sex;
-
     public Avengers() {
     }
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getSex() {
         return sex;
     }
-
     public void setSex(String sex) {
         this.sex = sex;
     }
-
     public Avengers(int id, String name, String sex) {
         this.id = id;
         this.name = name;
         this.sex = sex;
     }
-
-
     public static void main(String[] args) {
         ArrayList<Avengers> arrayList = new ArrayList<>();
         Avengers avengers01 = new Avengers(1, "钢铁侠", "男");
@@ -79,5 +67,4 @@ public class Avengers {
             System.out.println("id:" + avenger.id + " 性别：" + avenger.sex + " 姓名：" + avenger.name);
         }
     }
-
 }
